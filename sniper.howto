@@ -1,0 +1,17 @@
+/* ------------------------------------------- */
+GIT
+
+/* in app_root: */
+$ git init
+$ git add -A
+$ git status # must be a list of files to upload
+$ git commit -m"Initializing... "
+
+/* next line, https... comes from bitbucket/clone... */
+$ git remote add origin https://hhaller591026@bitbucket.org/hhaller591026/toy.git
+$ git push -u origin --all # If there is a fail, then
+	$ git push -f origin --all
+
+
+$ git push -u origin --all # If there is a fail, then
+	$ git push -f origin --all
