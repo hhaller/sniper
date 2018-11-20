@@ -12,6 +12,31 @@ $ git remote add origin https://hhaller591026@bitbucket.org/hhaller591026/toy.gi
 $ git push -u origin --all # If there is a fail, then
 	$ git push -f origin --all
 
+/* ------------------------------------------- */
+heroku create --buildpack heroku/python
+/* data "enigmatic... " from before command */
+heroku git:remote -a enigmatic-anchorage-43569 -r enigmatic-anchorage-43569
 
-$ git push -u origin --all # If there is a fail, then
-	$ git push -f origin --all
+/* changing default URL to upload app */
+hhaller@linux-es6j:~/djcode/sniper> git remote get-url heroku
+https://git.heroku.com/quiet-cliffs-12891.git
+hhaller@linux-es6j:~/djcode/sniper> git remote set-url heroku https://git.heroku.com/enigmatic-anchorage-43569.git
+hhaller@linux-es6j:~/djcode/sniper> git remote get-url heroku
+https://git.heroku.com/enigmatic-anchorage-43569.git
+
+
+
+
+/* no funciono con python a secas, entonces...  */
+# heroku create --buildpack heroku/python3
+ ›   Warning: heroku update available from 7.7.1 to 7.18.9
+Creating app... done, ⬢ arcane-forest-85464
+Setting buildpack to heroku/python3... done
+https://arcane-forest-85464.herokuapp.com/ | https://git.heroku.com/arcane-forest-85464.git
+
+# git remote get-url heroku
+https://git.heroku.com/enigmatic-anchorage-43569.git
+
+# git remote set-url heroku https://arcane-forest-85464.herokuapp.com
+# git remote get-url heroku
+https://arcane-forest-85464.herokuapp.com
